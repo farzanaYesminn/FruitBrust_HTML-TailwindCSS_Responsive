@@ -8,9 +8,8 @@
     <!-- Front Awasome --><script src="https://kit.fontawesome.com/be6d7cd290.js" crossorigin="anonymous"></script>
     <!-- CSS --><link rel="stylesheet" type="text/css" href="./style/style.css">
     <!-- Tailwind CSS stylesheet --> <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI -->  
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     
 
 </head>
@@ -57,14 +56,21 @@
 
 <!-- Header -->
 <header>
-    <div>
+    <div class="">
         <!-- Banner -->
-        <div class="">
+        <div class="relavtive">
             <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./images/banner1.png" class="w-full" />
+                <div id="slide1" class="carousel-item relative w-full " style="background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))">
+                  <img src="./images/banner1.png" class="w-full " />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
+
+                    <div class="flex flex-col justify-center items-center sm:gap-6">
+                    <h1 class=" md:text-5xl font-extrabold text-white text-center">Exotic tastes at your doorstep</h1>
+                    <p class="text-sm md:text-xl text-white text-center">We supply highly quality organic products</p>
+                    <button class="bg-[#F85559] text-sm text-white px-2 rounded-full sm:px-5 sm:py-3 sm:btn sm:btn-error sm:text-white ">Shop Now</button>
+                    </div>
+
                     <a href="#slide2" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
@@ -72,6 +78,13 @@
                   <img src="./images/banner2.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
+
+                    <div class="flex flex-col justify-center items-center sm:gap-6">
+                        <h1 class=" md:text-5xl font-extrabold text-white text-center">Exotic tastes at your doorstep</h1>
+                        <p class="text-sm md:text-xl text-white text-center">We supply highly quality organic products</p>
+                        <button class="bg-[#F85559] text-sm text-white px-2 rounded-full sm:px-5 sm:py-3 sm:btn sm:btn-error sm:text-white ">Shop Now</button>
+                        </div>
+
                     <a href="#slide3" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
@@ -79,6 +92,13 @@
                   <img src="./images/banner3.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
+
+                    <div class="flex flex-col justify-center items-center sm:gap-6">
+                        <h1 class=" md:text-5xl font-extrabold text-white text-center">Exotic tastes at your doorstep</h1>
+                        <p class="text-sm md:text-xl text-white text-center">We supply highly quality organic products</p>
+                        <button class="bg-[#F85559] text-sm text-white px-2 rounded-full sm:px-5 sm:py-3 sm:btn sm:btn-error sm:text-white ">Shop Now</button>
+                        </div>
+
                     <a href="#slide4" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
@@ -86,6 +106,13 @@
                   <img src="./images/banner4.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" class="btn btn-circle">❮</a> 
+
+                    <div class="flex flex-col justify-center items-center sm:gap-6">
+                        <h1 class=" md:text-5xl font-extrabold text-white text-center">Exotic tastes at your doorstep</h1>
+                        <p class="text-sm md:text-xl text-white text-center">We supply highly quality organic products</p>
+                        <button class="bg-[#F85559] text-sm text-white px-2 rounded-full sm:px-5 sm:py-3 sm:btn sm:btn-error sm:text-white ">Shop Now</button>
+                        </div>
+
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
@@ -93,6 +120,32 @@
 
         </div>
         <!-- Banner -->
+
+        <!-- Bottom Banner -->
+        <div class="hidden md:block absolute md:top-[370px] lg:top-[600px] md:left-[10%] lg:left-[30%] ">
+            <div class="bg-white w-9/12 flex flex-row justify-center items-center px-[100px] py-3">
+                <div class="flex flex-col justify-center items-center px-7">
+                    <img src="./images/fruit1.png " class="w-12 h-12">
+                    <p class="text-black font-bold">Grapes</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-7">
+                    <img src="./images/fruit2.png " class="w-12 h-12">
+                    <p class="text-black font-bold">Orange</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-7">
+                    <img src="./images/fruit3.png " class="w-12 h-12">
+                    <p class="text-black font-bold">Mango</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-7">
+                    <img src="./images/fruit4.png " class="w-12 h-12">
+                    <p class="text-black font-bold">Strawberry</p>
+                </div>
+                <div class="flex flex-col justify-center items-center px-7">
+                    <img src="./images/fruit5.png " class="w-12 h-12">
+                    <p class="text-black font-bold">Pomegranate</p>
+                </div>
+            </div>
+        </div>
         <!-- Bottom Banner -->
         <div>
 
@@ -105,9 +158,96 @@
 
 <!-- main -->
     <main >
+
+        <!-- Deal Day -->
+        <div class="my-[10%]">
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="flex gap-8 justify-center justify-evenly">
+                <div class="bg-white">
+                    <div class="w-ful h-[220px] border pt-6 pb-4 px-14 rounded-fully ">
+                        <img src="./images//fruit6.png ">
+                        <p class="text-[#121212] pt-4">12.90$ - 18.85$</p>
+                    </div>
+                    <div class="w-ful h-[150px] border pt-6 ">
+                        <p class="text-center">Apples</p>
+                        <div class="flex gap-2 justify-center items-center py-3">
+                            <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                        </div>
+                        <p class="text-center text-[#ec274f]">Details</p>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="w-ful h-[220px] border pt-6 pb-4 px-14 rounded-fully ">
+                        <img src="./images//fruit7.png ">
+                        <p class="text-[#121212] pt-4">12.90$ - 18.85$</p>
+                    </div>
+                    <div class="w-ful h-[150px] border pt-6 ">
+                        <p class="text-center">Apples</p>
+                        <div class="flex gap-2 justify-center items-center py-3">
+                            <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                        </div>
+                        <p class="text-center text-[#ec274f]">Details</p>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="w-ful h-[220px] border pt-6 pb-4 px-14 rounded-fully ">
+                        <img src="./images//fruit8.png ">
+                        <p class="text-[#121212] pt-4">12.90$ - 18.85$</p>
+                    </div>
+                    <div class="w-ful h-[150px] border pt-6 ">
+                        <p class="text-center">Apples</p>
+                        <div class="flex gap-2 justify-center items-center py-3">
+                            <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                        </div>
+                        <p class="text-center text-[#ec274f]">Details</p>
+                    </div>
+                </div>
+        
+                <div class="bg-white">
+                    <div class="w-ful h-[220px] border pt-6 pb-4 px-14 rounded-fully ">
+                        <img src="./images//fruit9.png ">
+                        <p class="text-[#121212] pt-4">12.90$ - 18.85$</p>
+                    </div>
+                    <div class="w-ful h-[150px] border pt-6 ">
+                        <p class="text-center">Apples</p>
+                        <div class="flex gap-2 justify-center items-center py-3">
+                            <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                        </div>
+                        <p class="text-center text-[#ec274f]">Details</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Deal Day -->
+
+
         <!-- team -->
-        <section class="py- sm:py-8">
-            <div class="bg-cover bg-center bg-black bg-transparent py-6 bg-opacity-50 text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/banner1.png');">
+        <section class=" sm:py-8">
+            <div class="bg-cover bg-center bg-black bg-transparent py-6 bg-opacity-50 text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/banner1.png'); ">
                 <div>
                     <h1 class="text-xl sm:text-3xl  font-bold text-center">Meet the team section</h1>
                     <p class="text-[10px] sm:text-[15px] text-center sm:w-[600px] items-center md:ml-[10%] lg:ml-[25%] mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
