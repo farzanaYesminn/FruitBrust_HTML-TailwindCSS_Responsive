@@ -56,12 +56,11 @@
 
 <!-- Header -->
 <header>
-    <div class="">
+    <div class="relative">
         <!-- Banner -->
-        <div class="relavtive">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full " style="background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))">
-                  <img src="./images/banner1.png" class="w-full " />
+        <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full ">
+                  <img src="./images/banner1.png" class="w-full brightness-50 " />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
 
@@ -75,7 +74,7 @@
                   </div>
                 </div> 
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./images/banner2.png" class="w-full" />
+                  <img src="./images/banner2.png" class="w-full brightness-50" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
 
@@ -89,7 +88,7 @@
                   </div>
                 </div> 
                 <div id="slide3" class="carousel-item relative w-full">
-                  <img src="./images/banner3.png" class="w-full" />
+                  <img src="./images/banner3.png" class="w-full brightness-50" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
 
@@ -103,7 +102,7 @@
                   </div>
                 </div> 
                 <div id="slide4" class="carousel-item relative w-full">
-                  <img src="./images/banner4.png" class="w-full" />
+                  <img src="./images/banner4.png" class="w-full brightness-50" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" class="btn btn-circle">❮</a> 
 
@@ -116,43 +115,38 @@
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
-              </div>
-
+              
         </div>
         <!-- Banner -->
-
+    
         <!-- Bottom Banner -->
-        <div class="hidden lg:block absolute md:top-[370px] lg:top-[650px] md:left-[10%] lg:left-[30%] ">
-            <div class="bg-white rounded w-9/12 flex flex-row justify-center items-center px-[100px] py-3">
+        <div class="hidden md:block absolute bottom-0 top-100 left-22 right-28 bg-gray-100 w-9/12 justify-center items-center rounded ">
+            <div class="w-9/12 mx-auto flex flex-row justify-center items-center py-3 px-2">
                 <div class="flex flex-col justify-center items-center px-7">
-                    <img src="./images/fruit1.png " class="w-12 h-12">
+                    <img src="./images/fruit1.png" class="w-12 h-12 filter brightness-75">
                     <p class="text-black font-bold">Grapes</p>
                 </div>
                 <div class="flex flex-col justify-center items-center px-7">
-                    <img src="./images/fruit2.png " class="w-12 h-12">
+                    <img src="./images/fruit2.png" class="w-12 h-12">
                     <p class="text-black font-bold">Orange</p>
                 </div>
                 <div class="flex flex-col justify-center items-center px-7">
-                    <img src="./images/fruit3.png " class="w-12 h-12">
+                    <img src="./images/fruit3.png" class="w-12 h-12">
                     <p class="text-black font-bold">Mango</p>
                 </div>
                 <div class="flex flex-col justify-center items-center px-7">
-                    <img src="./images/fruit4.png " class="w-12 h-12">
+                    <img src="./images/fruit4.png" class="w-12 h-12">
                     <p class="text-black font-bold">Strawberry</p>
                 </div>
                 <div class="flex flex-col justify-center items-center px-7">
-                    <img src="./images/fruit5.png " class="w-12 h-12">
+                    <img src="./images/fruit5.png" class="w-12 h-12">
                     <p class="text-black font-bold">Pomegranate</p>
                 </div>
             </div>
         </div>
         <!-- Bottom Banner -->
-        <div>
-
-        </div>
-        <!-- Bottom Banner -->
-
     </div>
+    
 </header>
 <!-- Header -->
 
@@ -208,7 +202,35 @@
                             <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
                             <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
                         </div>
-                        <p class="text-center text-[#ec274f]">Details</p>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <div class="flex justify-center items-center">
+                            <button onclick="my_modal_1.showModal()" class="text-center text-[#ec274f] justify-center">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                            <div class="modal-box">
+                                <div class="flex flex-col justify-center w-full h-[200px] sm:h-[220px]  pt-6 pb-4 items-center sm:px-14 rounded-fully ">
+                                    <img src="./images//fruit6.png " class="w-14 h-14 sm:w-[100px] h-[100px]">
+                                    <div class="w-full h-[150px]  pt-2 ">
+                                        <p class="text-center text-xl font-bold">Apple</p>
+                                        <div class="flex gap-2 justify-center items-center py-3">
+                                            <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                        </div>
+                                    <p class="w-30 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    
+                                </div>
+                            </div>
+                            <form method="dialog" class="modal-backdrop">
+                                <div class=" flex justify-center gap-4 mt-2">
+                                    <button class="w-[100px] sm:w-[200px] bg-[#F85559] text-sm  text-white py-1 px-2 rounded-full  items-center justify-center text-center">Buy Now</button>
+                                    <button class="w-[100px] sm:w-[200px] border border-[#F85559] text-[#F85559] text-sm   py-1 px-2 rounded-full  items-center justify-center text-center "><a href="#">Close</a></button>
+                                    </div>
+                            </form>
+                            </dialog>
+                        </div>
+                             <!-- Open the modal using ID.showModal() method -->
                     </div>
                 </div>
                 <div class="bg-white border">
@@ -226,7 +248,36 @@
                             <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
                             <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
                         </div>
-                        <p class="text-center text-[#ec274f]">Details</p>
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <div class="flex justify-center items-center">
+                        <button onclick="my_modal_2.showModal()" class="text-center text-[#ec274f] justify-center">Details</button>
+                        <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box">
+                            <div class="flex flex-col justify-center w-full h-[200px] sm:h-[220px]  pt-6 pb-4 items-center sm:px-14 rounded-fully ">
+                                <img src="./images//fruit7.png " class="w-14 h-14 sm:w-[100px] h-[100px]">
+                                <div class="w-full h-[150px]  pt-2 ">
+                                    <p class="text-center text-xl font-bold">Orange</p>
+                                    <div class="flex gap-2 justify-center items-center py-3">
+                                        <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                                        <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                                        <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                    </div>
+                                <p class="w-30 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                
+                            </div>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                            <div class=" flex justify-center gap-4 mt-2">
+                                <button class="w-[100px] sm:w-[200px] bg-[#F85559] text-sm  text-white py-1 px-2 rounded-full  items-center justify-center text-center"><a href="#">Buy Now</a></button>
+                                <button class="w-[100px] sm:w-[200px] border border-[#F85559] text-[#F85559] text-sm   py-1 px-2 rounded-full  items-center justify-center text-center ">Close</button>
+                                </div>
+                        </form>
+                        </dialog>
+                    </div>
+                         <!-- Open the modal using ID.showModal() method -->
                     </div>
                 </div>
                 <div class="bg-white border">
@@ -244,7 +295,35 @@
                             <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
                             <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
                         </div>
-                        <p class="text-center text-[#ec274f]">Details</p>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <div class="flex justify-center items-center">
+                            <button onclick="my_modal_3.showModal()" class="text-center text-[#ec274f] justify-center">Details</button>
+                            <dialog id="my_modal_3" class="modal">
+                            <div class="modal-box">
+                                <div class="flex flex-col justify-center w-full h-[200px] sm:h-[220px]  pt-6 pb-4 items-center sm:px-14 rounded-fully ">
+                                    <img src="./images//fruit8.png " class="w-14 h-14 sm:w-[100px] h-[100px]">
+                                    <div class="w-full h-[150px]  pt-2 ">
+                                        <p class="text-center text-xl font-bold">Red Dragon</p>
+                                        <div class="flex gap-2 justify-center items-center py-3">
+                                            <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                        </div>
+                                    <p class="w-30 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    
+                                </div>
+                            </div>
+                            <form method="dialog" class="modal-backdrop">
+                                <div class=" flex justify-center gap-4 mt-2">
+                                    <button class="w-[100px] sm:w-[200px] bg-[#F85559] text-sm  text-white py-1 px-2 rounded-full  items-center justify-center text-center">>Buy Now</button>
+                                    <button class="w-[100px] sm:w-[200px] border border-[#F85559] text-[#F85559] text-sm   py-1 px-2 rounded-full  items-center justify-center text-center "><a href="#">Close</a></button>
+                                    </div>
+                            </form>
+                            </dialog>
+                        </div>
+                             <!-- Open the modal using ID.showModal() method -->
                     </div>
                 </div>
         
@@ -263,7 +342,35 @@
                             <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
                             <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
                         </div>
-                        <p class="text-center text-[#ec274f]">Details</p>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <div class="flex justify-center items-center">
+                            <button onclick="my_modal_4.showModal()" class="text-center text-[#ec274f] justify-center">Details</button>
+                            <dialog id="my_modal_4" class="modal">
+                            <div class="modal-box">
+                                <div class="flex flex-col justify-center w-full h-[200px] sm:h-[220px]  pt-6 pb-4 items-center sm:px-14 rounded-fully ">
+                                    <img src="./images//fruit9.png " class="w-14 h-14 sm:w-[100px] h-[100px]">
+                                    <div class="w-full h-[150px]  pt-2 ">
+                                        <p class="text-center text-xl font-bold">Banana</p>
+                                        <div class="flex gap-2 justify-center items-center py-3">
+                                            <i class="fa-solid fa-star" style="color: #ec274f;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ec274f;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ec5f8a;"></i>
+                                        </div>
+                                    <p class="w-30 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    
+                                </div>
+                            </div>
+                            <form method="dialog" class="modal-backdrop">
+                                <div class=" flex justify-center gap-4 mt-2">
+                                    <button class="w-[100px] sm:w-[200px] bg-[#F85559] text-sm  text-white py-1 px-2 rounded-full  items-center justify-center text-center">Buy Now</button>
+                                    <button class="w-[100px] sm:w-[200px] border border-[#F85559] text-[#F85559] text-sm   py-1 px-2 rounded-full  items-center justify-center text-center "><a href="#">Close</a></button>
+                                    </div>
+                            </form>
+                            </dialog>
+                        </div>
+                             <!-- Open the modal using ID.showModal() method -->
                     </div>
                 </div>
              </div>
@@ -351,6 +458,97 @@
             </div>
         </section>
         <!-- team -->
+
+
+        <!-- Choose Us -->
+        <div >
+            <div class="flex flex-col justify-center gap-4  items-center">
+                <h1 class="text-xl font-extrabold">WHY CHOOSE US</h1>
+                <p class="w-[200px] md:w-[600px] text-sm md:text-base text-justify pb-8 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex flex-col sm:flex sm:flex-row justify-center items-center pb-12">
+                <div>
+                    <div class="flex justify-center items-center gap-3 ">
+                        <div>
+                            <i class="fa-solid fa-users bg-gray-500 py-2 px-2 rounded-full" style="color: #ffffff;"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-extrabold">Dedicated Team</h1>
+                            <hr class="h-px w-[200px] my-2 p-[1px] bg-gray-400 border-0 dark:bg-gray-700">
+                            <p class="w-[300px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                        <div class="flex justify-center items-center gap-3 py-8">
+                            <div>
+                                <i class="fa-solid fa-users bg-gray-500 py-2 px-2 rounded-full" style="color: #ffffff;"></i>
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-extrabold">Fresh is Best</h1>
+                                <hr class="h-px w-[200px] my-2 p-[1px] bg-gray-400 border-0 dark:bg-gray-700">
+                                <p class="w-[300px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center gap-3">
+                            <div>
+                                <i class="fa-solid fa-users bg-gray-500 py-2 px-2 rounded-full" style="color: #ffffff;"></i>
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-extrabold">Gift Certificates</h1>
+                                <hr class="h-px w-[200px] my-2 p-[1px] bg-gray-400 border-0 dark:bg-gray-700">
+                                <p class="w-[300px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                        
+                </div>
+                    
+                <div class="overflow-hidden">
+                    <img src="./images/banner3.png" class="object-cover h-80 w-50 mx-14">
+                </div>
+                
+
+                <div>
+                    <div class="flex flex-row-reverse justify-center items-center text-right gap-3 py-8">
+                        <div>
+                            <i class="fa-solid fa-users bg-gray-500 py-2 px-2 rounded-full" style="color: #ffffff;"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-extrabold">Integrated Supplier</h1>
+                            <hr class="h-px w-[200px] p-[1px] bg-gray-400 border-0 dark:bg-gray-700 ml-auto">
+                            <p class="w-[300px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="flex flex-row-reverse justify-center items-center text-right gap-3 py-8">
+                            <div>
+                                <i class="fa-solid fa-users bg-gray-500 py-2 px-2 rounded-full" style="color: #ffffff;"></i>
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-extrabold">Sustainable Practice</h1>
+                                <hr class="h-px w-[200px] p-[1px] bg-gray-400 border-0 dark:bg-gray-700 ml-auto">
+                                <p class="w-[300px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                    <div class="flex flex-row-reverse justify-center items-center text-right gap-3 py-8">
+                        <div>
+                            <i class="fa-solid fa-users bg-gray-500 py-2 px-2 rounded-full" style="color: #ffffff;"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-extrabold">The Benefits Only</h1>
+                            <hr class="h-px w-[200px] p-[1px] bg-gray-400 border-0 dark:bg-gray-700 ml-auto">
+                            <p class="w-[300px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <!-- Choose Us -->
+
+
+
     </main>
 <!-- main -->
 
